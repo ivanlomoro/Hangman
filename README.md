@@ -24,8 +24,8 @@ Here's a preview of the Hangman game in action:
 
 <table>
   <tr>
-    <td><img src="./assets/preview/desktop_version.mp4" alt="Desktop version" width="400"/></td>
-    <td><img src="./assets/preview/mobile_version.mp4" alt="Mobile version" width="400"/></td>
+    <td><img src="./assets/preview/desktop_version.gif" alt="Desktop version" width="400"/></td>
+    <td><img src="./assets/preview/mobile_version.gif" alt="Mobile version" width="400"/></td>
   </tr>
 </table>
 
