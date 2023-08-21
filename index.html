@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+      <div class="container hidden" id="gameContent">
+        
+        <h1 class="hangman-title">Hangman</h1>
+
+        <div class="hangman-ascii" id="hangmanAscii">
+          <img class="hangman-img" src="assets/hangman png/0.png" id="hangmanImg" alt="Hangman Image">
+        </div>        
+
+        <div class="word-display" id="wordDisplay">
+        </div>
+        
+        <div class="letter-buttons" id="letterButtons">
+          <button class="btns" onclick="guessLetter('A')">A</button>
+          <button class="btns" onclick="guessLetter('B')">B</button>
+          <button class="btns" onclick="guessLetter('C')">C</button>
+          <button class="btns" onclick="guessLetter('D')">D</button>
+          <button class="btns" onclick="guessLetter('E')">E</button>
+          <button class="btns" onclick="guessLetter('F')">F</button>
+          <button class="btns" onclick="guessLetter('G')">G</button>
+          <button class="btns" onclick="guessLetter('H')">H</button>
+          <button class="btns" onclick="guessLetter('I')">I</button>
+          <button class="btns" onclick="guessLetter('J')">J</button>
+          <button class="btns" onclick="guessLetter('K')">K</button>
+          <button class="btns" onclick="guessLetter('L')">L</button>
+          <button class="btns" onclick="guessLetter('M')">M</button>
+          <button class="btns" onclick="guessLetter('N')">N</button>
+          <button class="btns" onclick="guessLetter('Ñ')">Ñ</button>
+          <button class="btns" onclick="guessLetter('O')">O</button>
+          <button class="btns" onclick="guessLetter('P')">P</button>
+          <button class="btns" onclick="guessLetter('Q')">Q</button>
+          <button class="btns" onclick="guessLetter('R')">R</button>
+          <button class="btns" onclick="guessLetter('S')">S</button>
+          <button class="btns" onclick="guessLetter('T')">T</button>
+          <button class="btns" onclick="guessLetter('U')">U</button>
+          <button class="btns" onclick="guessLetter('V')">V</button>
+          <button class="btns" onclick="guessLetter('W')">W</button>
+          <button class="btns" onclick="guessLetter('X')">X</button>
+          <button class="btns" onclick="guessLetter('Y')">Y</button>
+          <button class="btns" onclick="guessLetter('Z')">Z</button>
+        </div>
+        <div class="user-score" id="userScore"></div>
+      </div>
+
+      <div class="congrats-screen" id="congratsScreen">
+        <h1 class="congrats-title" id="congratsTitle">CONGRATULATIONS</h1>
+        <p class="congrats-paragraph" id="congratsParagraph">You guessed all words.</p>
+        <button class="modal-btn" onclick="playAgain()">Play Again</button>
+      </div>
+      
+      <!-- Modals -->
+      <div id="loseModal" class="modal">
+        <div class="modal-content">
+          <h2 class="modal-content-title">You Lose!</h2>
+          <p class="modal-content-paragraph">Sorry, you couldn't guess the word.</p>
+          <button class="modal-btn" onclick="resetGame()">Play Again</button>
+        </div>
+      </div>
+    
+      <div id="winModal" class="modal">
+        <div class="modal-content">
+          <h2 class="modal-content-title">You Won!</h2>
+          <p class="modal-content-paragraph">Congratulations, you guessed the word.</p>
+          <button class="modal-btn" onclick="nextWord()">Next Word</button>
+        </div>
+      </div>
+
+      <!-- Ventana modal inicial -->
+      <div id="startModal" class="modal">
+        <div class="modal-content">
+          <h2 class="modal-content-title">Hangman Game</h2>
+          <label for="playerName">Enter your name:</label>
+          <input type="text" id="playerName" placeholder="Username" minlength="3">
+          <button class="modal-btn" onclick="startGame()" id="startButton" disabled>Start Game</button>
+        </div>
+      </div>
+
+</body>
+
+</html>
