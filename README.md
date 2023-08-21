@@ -18,17 +18,6 @@
 - CSS
 - JavaScript
 
-## Preview
-
-Here's a preview of the Hangman game in action:
-
-<table>
-  <tr>
-    <td><img src="./assets/preview/desktop_version.gif" alt="Desktop version" width="400"/></td>
-    <td><img src="./assets/preview/mobile_version.gif" alt="Mobile version" width="400"/></td>
-  </tr>
-</table>
-
 ## Getting Started
 
 To get started with the Hangman project:
@@ -55,3 +44,14 @@ This will automatically open a new tab in your web browser, displaying a live pr
 Thank you for taking the time to explore our work. If you have any questions, suggestions, or feedback, feel free to reach out to us on LinkedIn or through email at [ivanmartin_95@hotmail.com](mailto:ivanmartin_95@hotmail.com).
 
 Have a fantastic day and keep coding! 👨‍💻 💻
+
+## Preview
+
+Here's a preview of the Hangman game in action:
+
+<table>
+  <tr>
+    <td><img src="./assets/preview/desktop_version.gif" alt="Desktop version" width="400"/></td>
+    <td><img src="./assets/preview/mobile_version.gif" alt="Mobile version" width="400"/></td>
+  </tr>
+</table>
